@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: "Chrome-Black";   /*Can be any text*/
+    src: local("ChromeBlack-Normal"),
+      url("./fonts/ChromeBlack-Normal.ttf") format("truetype");
+  }
+
+@layer {
+    body{
+        @apply bg-gray-100 tracking-widest select-none;
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities{
+    .cell{
+        @apply bg-white border-solid border-2 rounded-xl hover:scale-95 cursor-pointer text-5xl font-bold uppercase;
+
+    }
+    .cell_o{
+        @apply bg-blue-100 border-blue-200 text-blue-400;
+    }
+    .cell_x{
+        @apply bg-red-100 border-red-200 text-red-400;
+    }
+    *{
+        @apply tracking-widest;
+    }
 }
+
