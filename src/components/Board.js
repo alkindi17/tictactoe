@@ -25,7 +25,7 @@ function Board() {
 
     // Creates a Session on API
     const createSession = () => {
-        fetch('http://alkindi.pythonanywhere.com/session',{
+        fetch('https://alkindi.pythonanywhere.com/session',{
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -87,7 +87,7 @@ function Board() {
         }
         
 
-        fetch('http://alkindi.pythonanywhere.com/session/play',{
+        fetch('https://alkindi.pythonanywhere.com/session/play',{
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
