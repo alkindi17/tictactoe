@@ -2,20 +2,21 @@
 
 This is a simple Tic Tac Toe game built using Create React App. The game can be played against a computer opponent or against another player.
 
-Additionally, there is an impossible to win mode. Computer opponent solve using the minimax algorithm.
+Additionally, I implemented an impossible to win mode against a computer opponent, using the MiniMax algorithm.
 
-Backend is on a tic-tac-toe API that I created, using python.
+I used the [Tic-Tac-Toe API](https://github.com/alkindi17/tictactoe-api) that I created, as the back-end of this project.
 
 ## Getting Started
 
-To use on localhost
+To install and use the webapp on localhost
+
 ```
-git clone https://
+git clone https://github.com/alkindi17/tictactoe
 cd tictactoe
 npm install
 npm start
 ```
-Open http://localhost:3000 in your browser to play the game
+Open http://localhost:3000 in your browser to use the app
 
 ## Built With
 
@@ -24,4 +25,4 @@ Open http://localhost:3000 in your browser to play the game
 
 ## Author
 
-- **Ali Al Kindi** - [Your GitHub Profile](https://github.com/alkindi17)
+[- **Ali Al Kindi** -](https://github.com/alkindi17)
